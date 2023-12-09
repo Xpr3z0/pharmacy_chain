@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneDialogAdd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <BorderPane prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <VBox fx:id="valuesVbox" alignment="CENTER_LEFT" fillWidth="false" prefWidth="300.0" spacing="10.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TextField prefWidth="180.0" />
+                  <TextField layoutX="20.0" layoutY="152.0" prefWidth="180.0" />
+                  <TextField layoutX="20.0" layoutY="99.0" prefWidth="180.0" />
+                  <TextField layoutX="20.0" layoutY="10.0" prefWidth="180.0" />
+                  <ChoiceBox fx:id="releaseFormChoice" prefWidth="180.0" />
+                  <CheckBox mnemonicParsing="false">
+                     <VBox.margin>
+                        <Insets top="8.0" />
+                     </VBox.margin>
+                  </CheckBox>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </right>
+         <left>
+            <VBox alignment="CENTER_RIGHT" prefWidth="250.0" spacing="15.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="144.0" layoutY="85.0" text="Название препарата">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="222.0" layoutY="195.0" text="Производитель">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="222.0" layoutY="214.0" text="Тип препарата">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="144.0" layoutY="179.0" text="Цена">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label layoutX="214.0" layoutY="204.0" text="Форма выпуска">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="142.0" layoutY="223.0" text="Рецептурный">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </VBox>
+         </left>
+         <bottom>
+            <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+               <children>
+                    <Button fx:id="idBottomAdd" mnemonicParsing="false" onAction="#onActionBottomAdd" prefHeight="29.0" prefWidth="105.0" text="Добавить">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#onCancelBtn" prefHeight="29.0" prefWidth="105.0" text="Отмена">
+                     <padding>
+                        <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" top="10.0" />
+               </padding>
+            </HBox>
+         </bottom>
+      </BorderPane>
+    </children>
+</AnchorPane>

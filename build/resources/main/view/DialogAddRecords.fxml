@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneDialogAdd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <BorderPane prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <right>
+                <VBox fx:id="inputVBox" alignment="CENTER_LEFT" fillWidth="false" prefWidth="275.0" spacing="10.0" BorderPane.alignment="CENTER">
+                    <children>
+                  <ChoiceBox fx:id="booksChoiceBox" prefWidth="150.0" />
+                        <TextField fx:id="totalTextField" layoutX="20.0" layoutY="99.0" prefWidth="180.0" />
+                  <TextField fx:id="packagingQuantityTextField1" layoutX="20.0" layoutY="100.0" prefWidth="180.0" />
+                    </children>
+                    <padding>
+                        <Insets left="10.0" />
+                    </padding>
+                </VBox>
+            </right>
+            <left>
+                <VBox alignment="CENTER_RIGHT" prefWidth="275.0" spacing="18.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label layoutX="144.0" layoutY="85.0" text="Книга">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                        <Label layoutX="222.0" layoutY="214.0" text="Магазин">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                  <Label text="Количество книг">
+                     <font>
+                        <Font size="15.0" />
+                     </font></Label>
+                    </children>
+                    <padding>
+                        <Insets right="10.0" />
+                    </padding>
+                </VBox>
+            </left>
+            <bottom>
+                <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+                    <children>
+                        <Button fx:id="idBottomAdd" mnemonicParsing="false" onAction="#onActionBottomAdd" prefHeight="29.0" prefWidth="105.0" text="Добавить">
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets right="5.0" />
+                            </HBox.margin>
+                        </Button>
+                        <Button fx:id="cancelBtn" mnemonicParsing="false" onAction="#onCancelBtn" prefHeight="29.0" prefWidth="105.0" text="Отмена">
+                            <padding>
+                                <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                            </padding>
+                            <HBox.margin>
+                                <Insets left="5.0" />
+                            </HBox.margin>
+                        </Button>
+                    </children>
+                    <padding>
+                        <Insets bottom="20.0" top="10.0" />
+                    </padding>
+                </HBox>
+            </bottom>
+         <top>
+             <Label text="Добавление новой записи" BorderPane.alignment="CENTER_LEFT">
+                 <BorderPane.margin>
+                     <Insets left="20.0" top="20.0" />
+                 </BorderPane.margin>
+                 <font>
+                     <Font size="22.0" />
+                 </font>
+             </Label>
+         </top>
+        </BorderPane>
+    </children>
+</AnchorPane>
